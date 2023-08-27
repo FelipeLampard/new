@@ -9,7 +9,7 @@ const Formulario = ({ setAlert }) => {
     confirmPassword: "",
   });
 
-  const ValidarInfo = (e) => {
+  const ValidarInformacion = (e) => {
     e.preventDefault();
 
     const { nombre, email, password, confirmPassword } = formInfo;
@@ -51,7 +51,7 @@ const Formulario = ({ setAlert }) => {
 
   return (
     <>
-      <form className="register" onSubmit={ValidarInfo}>
+      <form className="register" onSubmit={ValidarInformacion}>
         <div className="inputs">
           <input
             type="text"
